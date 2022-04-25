@@ -1,4 +1,4 @@
-pip install flask
+python -m pip install Flask
 import json
 from flask import Flask, request, abort
 from linebot import (
