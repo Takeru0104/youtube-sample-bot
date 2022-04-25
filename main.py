@@ -45,7 +45,10 @@ def handle_message(event):
         event.reply_token,
         TextSendMessage(text=event.message.text)
     )
-    
+
+if __name__ == "__main__":
+    app.run(host="localhost", port=8000)
+ 
 def main():
   USER_ID = info['USER_ID']
   messages=TextSendMessage(text="おはよう")
